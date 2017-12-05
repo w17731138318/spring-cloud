@@ -18,12 +18,15 @@ import java.util.Date;
 public class ServiceInstanceRestController {
 
 	private static final Logger logger = LoggerFactory.getLogger(ServiceInstanceRestController.class);
-
+	@Autowired
+	DiscoveryClient discoveryClient;
 	@GetMapping("/dc")
 	public String dc() {
-		String json=new Date().toString();
-		System.out.println("ServiceInstanceRestController:"+json);
-		return json;
+//		String json=new Date().toString();
+//		System.out.println("ServiceInstanceRestController:"+json);
+		String services = "Services: " + discoveryClient.getServices();
+		System.out.println(services);
+		return services;
 	}
 
 }
