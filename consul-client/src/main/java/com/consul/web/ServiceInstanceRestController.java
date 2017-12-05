@@ -16,7 +16,7 @@ public class ServiceInstanceRestController {
 	private static final Logger logger = LoggerFactory.getLogger(ServiceInstanceRestController.class);
 	@Autowired
 	DiscoveryClient discoveryClient;
-	@GetMapping("/consul")
+	@GetMapping("/dc")
 	public String dc() {
 		String services = "Services: " + discoveryClient.getServices();
 		System.out.println(services);

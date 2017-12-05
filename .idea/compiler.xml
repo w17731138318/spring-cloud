@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="consul-client" />
+        <module name="consul-consumer" />
         <module name="dubbo" />
         <module name="eureka-client" />
+        <module name="eureka-consumer" />
         <module name="eureka-consumer-ribbon" />
         <module name="eureka-server" />
         <module name="jwt-security" />
@@ -17,9 +19,11 @@
     <bytecodeTargetLevel target="1.8">
       <module name="consul" target="1.8" />
       <module name="consul-client" target="1.8" />
+      <module name="consul-consumer" target="1.8" />
       <module name="dubbo" target="1.8" />
       <module name="eureka-client" target="1.8" />
       <module name="eureka-client1" target="1.8" />
+      <module name="eureka-consumer" target="1.8" />
       <module name="eureka-consumer-ribbon" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="jwt-security" target="1.8" />
